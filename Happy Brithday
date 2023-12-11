@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background-color: #f7f7f7;
+    }
+
+    #container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #808E72;
+    }
+
+    #countdown {
+      font-size: 24px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Happy Birthday, Zamzam!</h1>
+    <p>Wishing you a fantastic day filled with joy and celebration and lots of kisses from yk who.</p>
+ 
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Countdown!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background-color: #f7f7f7;
+    }
+
+    #container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #808E72;
+    }
+
+    #countdown {
+      font-size: 24px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Happy Birthday Countdown!</h1>
+    <p>HAPPY BIRTHDSY YOU FREAKER</p>
+    <p id="countdown"></p>
+  </div>
+
+  <script>
+    // Set the date of your friend's birthday (year, month (0-based), day)
+    const birthday = new Date(new Date().getFullYear(), 11, 28);
+
+    function updateCountdown() {
+      const now = new Date();
+      const difference = birthday - now;
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      document.getElementById('countdown').innerHTML = `Time until birthday: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    // Update the countdown every second
+    setInterval(updateCountdown, 1000);
+
+    // Initial call to set the countdown
+    updateCountdown();
+  </script>
+</body>
+</html>
